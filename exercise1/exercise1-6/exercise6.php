@@ -2,12 +2,7 @@
 
 function checkEven($value)
 {
-    $rest = $value % 2;
-    if ($rest === 0) {
-        return true;
-    }
-
-    return false;
+    return $value % 2 === 0;
 }
 
 $square = 10;

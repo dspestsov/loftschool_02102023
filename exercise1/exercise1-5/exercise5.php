@@ -27,10 +27,8 @@ $cars = [
     'opel' => $opel
 ];
 
-foreach ($cars as $carName => $carProperties) {
+foreach ($cars as $carName => $carProps) {
     echo "Car $carName<br>";
-    foreach ($carProperties as $property) {
-        echo "$property ";
-    }
+    echo "{$carProps['model']} {$carProps['speed']} {$carProps['doors']} {$carProps['year']}";
     echo "<br>";
 }
